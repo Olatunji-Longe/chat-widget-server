@@ -1,0 +1,14 @@
+{
+  "socket":{
+    "uri": {
+      "base": "ws://localhost:4567",
+      "chat": "/chat"
+    }
+  },
+  "web" : {
+    "uri": {
+      "base": "http://localhost:4567"
+    },
+    "service_code": "012"
+  }
+}
