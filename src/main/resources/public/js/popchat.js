@@ -2,32 +2,32 @@
  * Created by olatunji on 8/2/17.
  */
 $(function(){
-    $("#chat-popup-btn").click(function () {
+    $("#pwc-popup-btn").click(function () {
         openWebSocket();
-        $('#chat-box').addClass('popup-box-on');
-        $("#chat-popup-btn").hide();
+        $('#pwc-chat-box').addClass('pwc-popup-box-on');
+        $("#pwc-popup-btn").hide();
     });
 
-    $("#hide-chat-popup").click(function () {
-        $('#chat-box').removeClass('popup-box-on');
-        $("#chat-popup-btn").show();
+    $("#pwc-chat-popup-hide").click(function () {
+        $('#pwc-chat-box').removeClass('pwc-popup-box-on');
+        $("#pwc-popup-btn").show();
     });
 
-    $("#dismiss-chat-popup").click(function () {
+    $("#pwc-chat-popup-dismiss").click(function () {
         closeWebSocket(chatWebSocket);
-        $("#chat-box #message").val("");
-        $("#chat-box .messages").html("");
-        $('#chat-box').removeClass('popup-box-on');
-        $("#chat-popup-btn").show();
+        $("#pwc-chat-box #pwc-message").val("");
+        $("#pwc-chat-box .pwc-messages").html("");
+        $('#pwc-chat-box').removeClass('pwc-popup-box-on');
+        $("#pwc-popup-btn").show();
     });
 
-    $(document).on('click', '#send', function(e){
-        sendWebsocketMessage($('#message').val(), $('.sender-id').attr('token'));
+    $(document).on('click', '#pwc-send', function(e){
+        sendWebsocketMessage($('#pwc-message').val(), $('.sender-id').attr('token'));
     });
 
-    $(document).on('keypress', '#message', function(e){
+    $(document).on('keypress', '#pwc-message', function(e){
         var keycode = e.keyCode || e.which;
-        if(keycode == '13') {
+        if(keycode === 13) {
             e.preventDefault();
             //var msg = $(this).val().replace("\n", "");
             sendWebsocketMessage($(this).val());

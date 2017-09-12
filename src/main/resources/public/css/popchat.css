@@ -6,7 +6,8 @@ body
 {
     font-family: 'Open Sans', sans-serif;
 }
-.popup-box {
+
+.pwc-popup-box {
     background-color: #ffffff;
     border: 1px solid #b0b0b0;
     bottom: 0;
@@ -17,10 +18,24 @@ body
     width: 500px;
     font-family: 'Open Sans', sans-serif;
 }
-.round.hollow {
+
+.pwc-pop-btn{
+    height: 80px !important;
+    width: 80px !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: xx-large;
+    border-radius: 50%;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.pwc-round.pwc-hollow {
     margin: 40px 0 0;
 }
-.round.hollow a {
+
+.pwc-round.pwc-hollow a {
     border: 2px solid #ff6701;
     border-radius: 35px;
     color: red;
@@ -30,7 +45,8 @@ body
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
 }
-.round.hollow a:hover {
+
+.pwc-round.pwc-hollow a:hover {
     border: 2px solid #000;
     border-radius: 35px;
     color: red;
@@ -39,56 +55,15 @@ body
     padding: 10px 21px;
     text-decoration: none;
 }
-.popup-box-on {
+
+.pwc-popup-box-on {
     display: block !important;
 
     bottom: 20px;
     right: 20px;
 }
-.popup-box .popup-head {
-    background-color: #fff;
-    clear: both;
-    color: #7b7b7b;
-    display: inline-table;
-    font-size: 21px;
-    padding: 7px 10px;
-    width: 100%;
-    font-family: Oswald;
-}
-.bg_none i {
-    border: 1px solid #ff6701;
-    border-radius: 25px;
-    color: #ff6701;
-    font-size: 17px;
-    height: 33px;
-    line-height: 30px;
-    width: 33px;
-}
-.bg_none:hover i {
-    border: 1px solid #000;
-    border-radius: 25px;
-    color: #000;
-    font-size: 17px;
-    height: 33px;
-    line-height: 30px;
-    width: 33px;
-}
-.bg_none {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: medium none;
-}
-.popup-box .popup-head .popup-head-right {
-    margin: 11px 7px 0;
-}
-.popup-box .popup-messages {
-}
-.popup-head-left img {
-    border: 1px solid #7b7b7b;
-    border-radius: 50%;
-    width: 44px;
-}
 
-.popup-messages-footer textarea {
+.pwc-popup-messages-footer textarea {
     /*border-bottom: 1px solid #b2b2b2 !important;*/
     height: 60px !important;
     /*margin: 5px;*/
@@ -98,234 +73,27 @@ body
     width: 100% !important;
 }
 
-.popup-messages-footer #send {
+.pwc-popup-messages-footer #pwc-send {
     height: 60px !important;
     width: 60px !important;
     border-radius: 50%;
 }
 
-.popup-messages-footer {
+.pwc-popup-messages-footer {
     background: #fff none repeat scroll 0 0;
     bottom: 0;
     position: absolute;
     width: 100%;
     padding-top: 5px;
 }
-.popup-messages-footer .btn-footer {
+.pwc-popup-messages-footer .btn-footer {
     overflow: hidden;
     padding: 2px 5px 10px 6px;
     width: 100%;
 }
-.simple_round {
-    background: #d1d1d1 none repeat scroll 0 0;
-    border-radius: 50%;
-    color: #4b4b4b !important;
-    height: 21px;
-    padding: 0 0 0 1px;
-    width: 21px;
-}
-
-
-
-
-
-.popup-box .popup-messages {
-    background: #3f9684 none repeat scroll 0 0;
-    height: 275px;
-    overflow: auto;
-}
-.direct-chat-messages {
-    overflow: auto;
-    padding: 10px;
-    transform: translate(0px, 0px);
-
-}
-.popup-messages .chat-box-single-line {
-    border-bottom: 1px solid #a4c6b5;
-    height: 12px;
-    margin: 7px 0 20px;
-    position: relative;
-    text-align: center;
-}
-.popup-messages abbr.timestamp {
-    background: #3f9684 none repeat scroll 0 0;
-    color: #fff;
-    padding: 0 11px;
-}
-
-.popup-head-right .btn-group {
-    display: inline-flex;
-    margin: 0 8px 0 0;
-    vertical-align: top !important;
-}
-.chat-header-button {
-    background: transparent none repeat scroll 0 0;
-    border: 1px solid #636364;
-    border-radius: 50%;
-    font-size: 14px;
-    height: 30px;
-    width: 30px;
-}
-.popup-head-right .btn-group .dropdown-menu {
-    border: medium none;
-    min-width: 122px;
-    padding: 0;
-}
-.popup-head-right .btn-group .dropdown-menu li a {
-    font-size: 12px;
-    padding: 3px 10px;
-    color: #303030;
-}
-
-.popup-messages abbr.timestamp {
-    background: #3f9684  none repeat scroll 0 0;
-    color: #fff;
-    padding: 0 11px;
-}
-.popup-messages .chat-box-single-line {
-    border-bottom: 1px solid #a4c6b5;
-    height: 12px;
-    margin: 7px 0 20px;
-    position: relative;
-    text-align: center;
-}
-.popup-messages .direct-chat-messages {
-    height: auto;
-}
-.popup-messages .direct-chat-text {
-    background: #dfece7 none repeat scroll 0 0;
-    border: 1px solid #dfece7;
-    border-radius: 2px;
-    color: #1f2121;
-}
-
-.popup-messages .direct-chat-timestamp {
-    color: #fff;
-    opacity: 0.6;
-}
-
-.popup-messages .direct-chat-name {
-    font-size: 15px;
-    font-weight: 600;
-    margin: 0 0 0 49px !important;
-    color: #fff;
-    opacity: 0.9;
-}
-.popup-messages .direct-chat-info {
-    display: block;
-    font-size: 12px;
-    margin-bottom: 0;
-}
-.popup-messages  .big-round {
-    margin: -9px 0 0 !important;
-}
-.popup-messages  .direct-chat-img {
-    border: 1px solid #fff;
-    background: #3f9684  none repeat scroll 0 0;
-    border-radius: 50%;
-    float: left;
-    height: 40px;
-    margin: -21px 0 0;
-    width: 40px;
-}
-.direct-chat-reply-name {
-    color: #fff;
-    font-size: 15px;
-    margin: 0 0 0 10px;
-    opacity: 0.9;
-}
-
-.direct-chat-img-reply-small
-{
-    border: 1px solid #fff;
-    border-radius: 50%;
-    float: left;
-    height: 20px;
-    margin: 0 8px;
-    width: 20px;
-    background:#3f9684;
-}
-
-.popup-messages .direct-chat-msg {
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.popup-messages .doted-border::after {
-    background: transparent none repeat scroll 0 0 !important;
-    border-right: 2px dotted #fff !important;
-    bottom: 0;
-    content: "";
-    left: 17px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 2px;
-    display: inline;
-    z-index: -2;
-}
-
-.popup-messages .direct-chat-msg::after {
-    background: #fff none repeat scroll 0 0;
-    border-right: medium none;
-    bottom: 0;
-    content: "";
-    left: 17px;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    width: 2px;
-    display: inline;
-    z-index: -2;
-}
-.direct-chat-text::after, .direct-chat-text::before {
-
-    border-color: transparent #dfece7 transparent transparent;
-
-}
-.direct-chat-text::after, .direct-chat-text::before {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-color: transparent #d2d6de transparent transparent;
-    border-image: none;
-    border-style: solid;
-    border-width: medium;
-    content: " ";
-    height: 0;
-    pointer-events: none;
-    position: absolute;
-    right: 100%;
-    top: 15px;
-    width: 0;
-}
-.direct-chat-text::after {
-    border-width: 5px;
-    margin-top: -5px;
-}
-.popup-messages .direct-chat-text {
-    background: #dfece7 none repeat scroll 0 0;
-    border: 1px solid #dfece7;
-    border-radius: 2px;
-    color: #1f2121;
-}
-.direct-chat-text {
-    background: #d2d6de none repeat scroll 0 0;
-    border: 1px solid #d2d6de;
-    border-radius: 5px;
-    color: #444;
-    margin: 5px 0 0 50px;
-    padding: 5px 10px;
-    position: relative;
-}
-
-
-
 
 /*Nice Chat*/
-
-.chat_window {
+.pwc-chat-window {
     /*position: absolute;*/
     /*width: calc(100% - 20px);*/
     width: 100%;
@@ -342,17 +110,19 @@ body
     overflow: hidden;
 }
 
-.top_menu {
+.pwc-top-menu {
     background-color: #fff;
     width: 100%;
     padding: 10px 0 10px;
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
 }
-.top_menu .buttons {
+
+.pwc-top-menu .buttons {
     margin: 3px 0 0 20px;
     position: absolute;
 }
-.top_menu .buttons .button {
+
+.pwc-top-menu .buttons .button {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -361,28 +131,31 @@ body
     position: relative;
 }
 
-.top_menu .buttons .button .icon-text{
+.pwc-top-menu .buttons .button .icon-text{
     margin: 5px 4px 5px 4px;
     position: absolute;
     font-size: 55%;
 }
 
-.top_menu .buttons .button.dismiss {
+.pwc-top-menu .buttons .button.dismiss {
     background-color: #f5886e;
 }
-.top_menu .buttons .button.minimize {
+
+.pwc-top-menu .buttons .button.minimize {
     background-color: #fdbf68;
 }
-.top_menu .buttons .button.maximize {
+
+.pwc-top-menu .buttons .button.maximize {
     background-color: #a3d063;
 }
-.top_menu .title {
+
+.pwc-top-menu .pwc-title {
     text-align: center;
     color: #bcbdc0;
     font-size: 15px;
 }
 
-.messages {
+.pwc-messages {
     position: relative;
     list-style: none;
     padding: 20px 10px 0 10px;
@@ -391,54 +164,68 @@ body
     /*overflow: scroll;*/
     overflow-y: scroll;
 }
-.messages .message {
+
+.pwc-messages .pwc-message {
     clear: both;
     overflow: hidden;
     margin-bottom: 20px;
     transition: all 0.5s linear;
     opacity: 0;
 }
-.messages .message.left .avatar {
+
+.pwc-messages .pwc-message.left .pwc-avatar {
     background-color: #f5886e;
     float: left;
 }
-.messages .message.left .text_wrapper {
+
+.pwc-messages .pwc-message.left .pwc-text-wrapper {
     background-color: #ffe6cb;
     margin-left: 20px;
 }
-.messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
+
+.pwc-messages .pwc-message.left .pwc-text-wrapper::after,
+.pwc-messages .pwc-message.left .pwc-text-wrapper::before {
     right: 100%;
     border-right-color: #ffe6cb;
 }
-.messages .message.left .msg-head {
+
+.pwc-messages .pwc-message.left .pwc-msg-head {
     color: #c48843;
 }
-.messages .message.right .avatar {
+
+.pwc-messages .pwc-message.right .pwc-avatar {
     background-color: #1b95e0;
     float: right;
 }
-.messages .message.right .text_wrapper {
+
+.pwc-messages .pwc-message.right .pwc-text-wrapper {
     background-color: #c7eafc;
     margin-right: 20px;
     float: right;
 }
-.messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
+
+.pwc-messages .pwc-message.right .pwc-text-wrapper::after,
+.pwc-messages .pwc-message.right .pwc-text-wrapper::before {
     left: 100%;
     border-left-color: #c7eafc;
 }
-.messages .message.right .msg-head {
+
+.pwc-messages .pwc-message.right .pwc-msg-head {
     color: #45829b;
 }
-.messages .message.appeared {
+
+.pwc-messages .pwc-message.appeared {
     opacity: 1;
 }
-.messages .message .avatar {
+
+.pwc-messages .pwc-message .pwc-avatar {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: inline-block;
 }
-.messages .message .text_wrapper {
+
+.pwc-messages .pwc-message .pwc-text-wrapper {
     display: inline-block;
     padding: 5px 15px 5px 15px;
     border-radius: 6px;
@@ -446,7 +233,9 @@ body
     min-width: 100px;
     position: relative;
 }
-.messages .message .text_wrapper::after, .messages .message .text_wrapper:before {
+
+.pwc-messages .pwc-message .pwc-text-wrapper::after,
+.pwc-messages .pwc-message .pwc-text-wrapper:before {
     top: 18px;
     border: solid transparent;
     content: " ";
@@ -455,88 +244,21 @@ body
     position: absolute;
     pointer-events: none;
 }
-.messages .message .text_wrapper::after {
+
+.pwc-messages .pwc-message .pwc-text-wrapper::after {
     border-width: 13px;
     margin-top: 0px;
 }
-.messages .message .text_wrapper::before {
+
+.pwc-messages .pwc-message .pwc-text-wrapper::before {
     border-width: 15px;
     margin-top: -2px;
 }
-.messages .message .text_wrapper .text {
+
+.pwc-messages .pwc-message .pwc-text-wrapper .text {
     font-size: 15px;
     font-weight: 300;
     overflow-wrap: break-word;
 }
 
-.bottom_wrapper {
-    position: relative;
-    width: 100%;
-    background-color: #fff;
-    padding: 20px 20px;
-    position: absolute;
-    bottom: 0;
-}
-.bottom_wrapper .message_input_wrapper {
-    display: inline-block;
-    height: 50px;
-    border-radius: 25px;
-    border: 1px solid #bcbdc0;
-    width: calc(100% - 160px);
-    position: relative;
-    padding: 0 20px;
-}
-.bottom_wrapper .message_input_wrapper .message_input {
-    border: none;
-    height: 100%;
-    box-sizing: border-box;
-    width: calc(100% - 40px);
-    position: absolute;
-    outline-width: 0;
-    color: gray;
-}
-.bottom_wrapper .send_message {
-    width: 140px;
-    height: 50px;
-    display: inline-block;
-    border-radius: 50px;
-    background-color: #a3d063;
-    border: 2px solid #a3d063;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.2s linear;
-    text-align: center;
-    float: right;
-}
-.bottom_wrapper .send_message:hover {
-    color: #a3d063;
-    background-color: #fff;
-}
-.bottom_wrapper .send_message .text {
-    font-size: 18px;
-    font-weight: 300;
-    display: inline-block;
-    line-height: 48px;
-}
-
-.message_template {
-    display: none;
-}
-
-/*.bottom-right-fix{
-    position: fixed;
-    top: 100vh;
-}*/
-
-.btn-chat-bottom-fixed{
-    height: 80px !important;
-    width: 80px !important;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: xx-large;
-    border-radius: 50%;
-    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-}
 
