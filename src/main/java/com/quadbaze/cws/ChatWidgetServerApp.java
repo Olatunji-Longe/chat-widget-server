@@ -17,37 +17,11 @@ public class ChatWidgetServerApp {
         staticFileLocation("/public");
         webSocket("/chat", ChatWebSocketController.class);
 
-        /*before(new Filter() {
-            @Override
-            public void handle(Request request, Response response) {
-                updateHeaders(request, response);
-            }
-        });
-
-        after(new Filter() {
-            @Override
-            public void handle(Request request, Response response) {
-                updateHeaders(request, response);
-            }
-        });*/
-
-
         CorsFilter.enableCORS();
-        CorsFilter.applyCORS();
+
         new MessagesRestController().initEndpoints();
         new WidgetController().initEndpoints();
 
         init();
     }
-
-    /*public static final void updateHeaders(Request request, Response response){
-        response.header("Access-Control-Allow-Origin", "*");
-        response.header("Access-Control-Allow-Methods", "POST, PUT, GET, OPTIONS, DELETE");
-        response.header("Access-Control-Allow-Headers", "Authorization, Content-Type");
-        response.header("Access-Control-Max-Age", "3600");
-        if ("OPTIONS".equalsIgnoreCase(request.requestMethod())) {
-            response.status(HttpServletResponse.SC_OK);
-        }
-    }*/
-
 }
